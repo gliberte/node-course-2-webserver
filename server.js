@@ -44,7 +44,9 @@ app.get('/about',(req,res)=>{
     pageBody:"Bienvendios a la pagina de Acerca de..."
   })
 })
-
+app.get('/proyects',(req,res)=>{
+  res.render('proyects')
+})
 
 app.listen(port,()=>{
   console.log(`Server is up on ${port}`);
